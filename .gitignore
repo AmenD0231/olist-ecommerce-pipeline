@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Data — large and reproducible by re-running the pipeline scripts,
+# not something to version directly in git
+data/raw/*
+data/staging/*
+data/processed/*
+data/features/*
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+!data/processed/.gitkeep
+!data/features/.gitkeep
+
+# Database — rebuilt by 03_build_database.bat, not versioned in git
+database/*.db
+
+# Logs
+logs/*.log
+
+# DVC cache (once we set up DVC in a later phase)
+.dvc/cache/
+
+# OS files
+Thumbs.db
+.DS_Store
