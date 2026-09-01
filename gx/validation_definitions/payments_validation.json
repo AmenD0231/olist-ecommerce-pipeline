@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "493d6545-32e0-4a3e-8e6b-d66919967d37",
+      "name": "payments_asset"
+    },
+    "batch_definition": {
+      "id": "aa6d5613-3773-4ac1-a161-f612d67f7ae7",
+      "name": "payments_batch_def"
+    },
+    "datasource": {
+      "id": "725627fb-0757-4ace-9eeb-c78fcc901ff2",
+      "name": "olist_sqlite_tables"
+    }
+  },
+  "id": "7b29eb3a-221d-4f4c-97e3-a15179cb58be",
+  "name": "payments_validation",
+  "suite": {
+    "id": "af69c2ac-c13b-4db8-8f49-a664db6b239c",
+    "name": "payments_suite"
+  }
+}

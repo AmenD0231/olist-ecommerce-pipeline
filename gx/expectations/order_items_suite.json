@@ -1,0 +1,39 @@
+{
+  "expectations": [
+    {
+      "id": "26edf031-3073-455a-8902-fad5c13a56ea",
+      "kwargs": {
+        "column": "product_id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "3edb83fd-8a64-4561-bf14-27f836cb6857",
+      "kwargs": {
+        "column": "price",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "288027b2-58a4-4c47-8fce-0f867c95aeab",
+      "kwargs": {
+        "column": "freight_value",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    }
+  ],
+  "id": "0c12583d-0856-41d2-a974-7d5d4ab1d1bd",
+  "meta": {
+    "great_expectations_version": "1.22.0"
+  },
+  "name": "order_items_suite",
+  "notes": null
+}

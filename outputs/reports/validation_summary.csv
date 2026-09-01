@@ -1,0 +1,7 @@
+table,rows_checked,expectations_passed,expectations_total,status
+customers,99441,3,3,PASSED
+orders,99441,3,3,PASSED
+order_items,112650,3,3,PASSED
+payments,103886,2,3,FAILED
+reviews,99224,2,2,PASSED
+products,32951,1,1,PASSED

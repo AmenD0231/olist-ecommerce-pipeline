@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "id": "56734ff7-e78f-47b9-9eb7-e3f0f664c1f9",
+      "kwargs": {
+        "column": "payment_value",
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "2c54e8fc-f7b0-43dd-9808-d44cb3acdedc",
+      "kwargs": {
+        "column": "payment_installments",
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "33a8c84f-aca2-4915-b5de-bce3c8e3a642",
+      "kwargs": {
+        "column": "payment_type",
+        "value_set": [
+          "credit_card",
+          "boleto",
+          "voucher",
+          "debit_card",
+          "not_defined"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    }
+  ],
+  "id": "af69c2ac-c13b-4db8-8f49-a664db6b239c",
+  "meta": {
+    "great_expectations_version": "1.22.0"
+  },
+  "name": "payments_suite",
+  "notes": null
+}

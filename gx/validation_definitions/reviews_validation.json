@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "e39e63a6-a1f3-480b-aad1-b291d903022c",
+      "name": "reviews_asset"
+    },
+    "batch_definition": {
+      "id": "f9579c5b-7cc1-49aa-a547-3e13d7546e1f",
+      "name": "reviews_batch_def"
+    },
+    "datasource": {
+      "id": "725627fb-0757-4ace-9eeb-c78fcc901ff2",
+      "name": "olist_sqlite_tables"
+    }
+  },
+  "id": "33ad19ba-bbe7-4468-a91d-a27f5f2265b3",
+  "name": "reviews_validation",
+  "suite": {
+    "id": "194cf17b-b6de-4d0d-90a7-bc587a4be60d",
+    "name": "reviews_suite"
+  }
+}
