@@ -1,0 +1,5 @@
+cluster,recency_days,purchase_frequency,total_spent,avg_review_score,customer_count,pct_of_total
+0,392.54,1.0,157.08,4.64,32068,34.56
+1,121.71,1.0,153.83,4.7,42021,45.29
+2,229.96,1.0,182.81,1.72,15940,17.18
+3,219.58,2.11,320.37,4.2,2762,2.98
