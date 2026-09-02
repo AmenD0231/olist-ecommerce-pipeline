@@ -1,23 +1,16 @@
-# =============================================================================
-# KAGGLE_AUTH.PY
-# =============================================================================
-# Purpose:
-# Authenticate with the Kaggle API using username + key, entered securely
-# at runtime. This replaces the notebook's KAGGLE_API_TOKEN approach,
-# which has a known bug in current kaggle package versions where the
-# token gets silently consumed on import.
-# =============================================================================
-
 import os
 from getpass import getpass
 
-
 def authenticate_kaggle():
     """
-    Prompt for Kaggle username and API key, then set them as environment
-    variables. The kaggle package checks KAGGLE_USERNAME and KAGGLE_KEY
-    automatically — no kaggle.json file needed.
+    Use KAGGLE_USERNAME/KAGGLE_KEY if already set in the environment
+    (needed for unattended runs, e.g. via Airflow). Otherwise prompt
+    interactively — this path is only hit during manual runs.
     """
+    if os.environ.get("KAGGLE_USERNAME") and os.environ.get("KAGGLE_KEY"):
+        print("Using existing Kaggle credentials from environment variables.")
+        return
+
     username = input("Kaggle username: ").strip()
     key = getpass("Kaggle API key (input hidden): ").strip()
 
@@ -29,9 +22,4 @@ def authenticate_kaggle():
 
     os.environ["KAGGLE_USERNAME"] = username
     os.environ["KAGGLE_KEY"] = key
-
     print("Kaggle credentials set for this session.")
-
-
-if __name__ == "__main__":
-    authenticate_kaggle()

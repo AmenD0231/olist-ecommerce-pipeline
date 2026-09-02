@@ -4,6 +4,7 @@ __pycache__/
 
 # Virtual environment
 venv/
+venv-airflow/
 
 # Data — large and reproducible by re-running the pipeline scripts,
 # not something to version directly in git
