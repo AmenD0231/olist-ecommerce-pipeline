@@ -1,20 +1,27 @@
 # =============================================================================
 # OLIST_PIPELINE_DAG.PY
 # =============================================================================
-# STATUS: Designed and code-reviewed, not executed on this machine.
+# STATUS: Designed and code-reviewed on Windows; executed successfully on
+# GitHub Codespaces (Linux).
 #
 # Apache Airflow has no native Windows support: it calls
 # os.register_at_fork() unconditionally at import time, a POSIX-only
 # function absent from Windows' os module in every Python version.
 # See https://github.com/apache/airflow/issues/10388 (open since 2020).
-# Airflow's own documentation states WSL2 or Linux containers are
-# required for Windows users. Given this project's hardware (Intel
-# Celeron N3350, 4GB RAM) and submission timeline, adding a second
-# virtualized Linux environment was assessed as disproportionate setup
-# risk relative to the marks available. Orchestration is instead
-# demonstrated as validated DAG code (this file) plus a local
-# equivalent, run_all.bat, that performs the same task sequencing and
-# dependency ordering without the Airflow scheduler/webserver.
+# Given this project's hardware (Intel Celeron N3350, 4GB RAM), running
+# Airflow locally via WSL2 was assessed as disproportionate setup risk
+# relative to the marks available. The DAG was therefore first
+# demonstrated as validated, code-reviewed code plus a local equivalent,
+# run_all.bat, performing the same task sequencing and dependency
+# ordering without the Airflow scheduler/webserver.
+#
+# To provide a genuine execution trace rather than a static artifact,
+# this same DAG (unmodified apart from OS-appropriate paths below) was
+# subsequently deployed and run end-to-end on GitHub Codespaces, a
+# cloud-hosted Linux environment. This sidesteps the Windows
+# incompatibility entirely and avoids the local machine's RAM
+# constraint, since execution happens on Codespaces' own compute rather
+# than the Celeron N3350.
 #
 # Each task shells out to the pipeline's main virtual environment
 # (venv, NOT a separate Airflow venv) via subprocess. Airflow's own
@@ -24,13 +31,13 @@
 # =============================================================================
 
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from airflow.sdk import dag, task
 
-PROJECT_ROOT = Path("C:/Projects/olist-pipeline")
-VENV_PYTHON = str(PROJECT_ROOT / "venv" / "Scripts" / "python.exe")
+PROJECT_ROOT = Path("/workspaces/olist-ecommerce-pipeline")
+VENV_PYTHON = str(PROJECT_ROOT / "venv" / "bin" / "python")
 
 
 def run_stage(script_relative_path: str) -> None:
@@ -59,7 +66,7 @@ def run_stage(script_relative_path: str) -> None:
     default_args={
         "retries": 2,        # Retry transient failures (e.g. Kaggle API
                               # timeouts) twice before alerting.
-        "retry_delay": 300,  # 5 minutes between retries.
+        "retry_delay": timedelta(minutes=5),
     },
     tags=["olist", "e-commerce", "data-engineering"],
 )
