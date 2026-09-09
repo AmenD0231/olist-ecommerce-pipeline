@@ -1,0 +1,37 @@
+{"timestamp":"2026-09-09T23:14:32.084076Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":2412}
+{"timestamp":"2026-09-09T23:14:32.388735Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags, apache-airflow-providers-common-sql-example-dags, apache-airflow-providers-standard-example-dags","try_number":1,"task_id":"build_features","run_id":"manual__2026-09-09T22:38:36.282237+00:00","map_index":-1,"ti_id":"01a08852-b31e-713e-87be-b876514c4b91","dag_id":"olist_ecommerce_pipeline","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":304}
+{"timestamp":"2026-09-09T23:14:32.390184Z","level":"info","event":"Filling up the DagBag from /workspaces/olist-ecommerce-pipeline/airflow/dags/olist_pipeline_dag.py","try_number":1,"task_id":"build_features","run_id":"manual__2026-09-09T22:38:36.282237+00:00","map_index":-1,"ti_id":"01a08852-b31e-713e-87be-b876514c4b91","dag_id":"olist_ecommerce_pipeline","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":460}
+{"timestamp":"2026-09-09T23:14:32.438947Z","level":"info","event":"Worker startup parse complete","bundle_name":"dags-folder","bundle_version":null,"dag_file":"olist_pipeline_dag.py","dag_id":"olist_ecommerce_pipeline","bundle_prepare_ms":2,"dag_file_parse_ms":48,"try_number":1,"task_id":"build_features","run_id":"manual__2026-09-09T22:38:36.282237+00:00","map_index":-1,"ti_id":"01a08852-b31e-713e-87be-b876514c4b91","logger":"task","filename":"task_runner.py","lineno":1073}
+{"timestamp":"2026-09-09T23:14:32.471734Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:32.472095Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:32.472331Z","level":"info","event":"Current task name:build_features","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:32.472577Z","level":"info","event":"Dag name:olist_ecommerce_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:32.469931Z","level":"info","event":"::endgroup::","try_number":1,"task_id":"build_features","run_id":"manual__2026-09-09T22:38:36.282237+00:00","map_index":-1,"ti_id":"01a08852-b31e-713e-87be-b876514c4b91","dag_id":"olist_ecommerce_pipeline","logger":"task","filename":"task_runner.py","lineno":2232}
+{"timestamp":"2026-09-09T23:14:39.418385Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.418747Z","level":"info","event":"BUILDING CUSTOMER-LEVEL RFM FEATURES","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.418905Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.419046Z","level":"info","event":"Snapshot date used for recency: 2018-08-29","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.419566Z","level":"info","event":"Unique customers: 93,396","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.419811Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.420099Z","level":"info","event":"Purchase frequency distribution:","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.420665Z","level":"info","event":"purchase_frequency","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.420824Z","level":"info","event":"1     90629","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.422508Z","level":"info","event":"2      2542","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.422720Z","level":"info","event":"3       179","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.422903Z","level":"info","event":"4        27","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.423079Z","level":"info","event":"5         9","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.423243Z","level":"info","event":"6         5","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.423425Z","level":"info","event":"7         3","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.423636Z","level":"info","event":"9         1","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.423806Z","level":"info","event":"15        1","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.423974Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.424113Z","level":"info","event":"Customers with more than 1 order: 2,767 (2.96% of 93,396)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.424247Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.424381Z","level":"info","event":"Features saved to: /workspaces/olist-ecommerce-pipeline/data/features/customer_features.parquet","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.424554Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.415933Z","level":"info","event":"Done. Returned value was: None","try_number":1,"task_id":"build_features","run_id":"manual__2026-09-09T22:38:36.282237+00:00","map_index":-1,"ti_id":"01a08852-b31e-713e-87be-b876514c4b91","dag_id":"olist_ecommerce_pipeline","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-09-09T23:14:39.416146Z","level":"info","event":"::group::Post Execute","try_number":1,"task_id":"build_features","run_id":"manual__2026-09-09T22:38:36.282237+00:00","map_index":-1,"ti_id":"01a08852-b31e-713e-87be-b876514c4b91","dag_id":"olist_ecommerce_pipeline","logger":"task","filename":"task_runner.py","lineno":1580}
+{"timestamp":"2026-09-09T23:14:39.777256Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.778055Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.778307Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): build_features>","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:14:39.776026Z","level":"info","event":"::endgroup::","try_number":1,"task_id":"build_features","run_id":"manual__2026-09-09T22:38:36.282237+00:00","map_index":-1,"ti_id":"01a08852-b31e-713e-87be-b876514c4b91","dag_id":"olist_ecommerce_pipeline","logger":"task","filename":"task_runner.py","lineno":2379}

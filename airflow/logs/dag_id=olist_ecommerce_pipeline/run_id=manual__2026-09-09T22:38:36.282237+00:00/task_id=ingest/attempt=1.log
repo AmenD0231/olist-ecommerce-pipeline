@@ -1,0 +1,33 @@
+{"timestamp":"2026-09-09T23:11:32.370424Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":2412}
+{"timestamp":"2026-09-09T23:11:42.211914Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags, apache-airflow-providers-common-sql-example-dags, apache-airflow-providers-standard-example-dags","try_number":1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31a-7c10-b1a0-c6e50e4e4c2a","task_id":"ingest","dag_id":"olist_ecommerce_pipeline","map_index":-1,"logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":304}
+{"timestamp":"2026-09-09T23:11:42.212727Z","level":"info","event":"Filling up the DagBag from /workspaces/olist-ecommerce-pipeline/airflow/dags/olist_pipeline_dag.py","try_number":1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31a-7c10-b1a0-c6e50e4e4c2a","task_id":"ingest","dag_id":"olist_ecommerce_pipeline","map_index":-1,"logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":460}
+{"timestamp":"2026-09-09T23:11:42.262843Z","level":"info","event":"Worker startup parse complete","bundle_name":"dags-folder","bundle_version":null,"dag_file":"olist_pipeline_dag.py","dag_id":"olist_ecommerce_pipeline","bundle_prepare_ms":1,"dag_file_parse_ms":50,"try_number":1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31a-7c10-b1a0-c6e50e4e4c2a","task_id":"ingest","map_index":-1,"logger":"task","filename":"task_runner.py","lineno":1073}
+{"timestamp":"2026-09-09T23:11:42.306967Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:42.307275Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:42.307563Z","level":"info","event":"Current task name:ingest","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:42.307753Z","level":"info","event":"Dag name:olist_ecommerce_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:42.307482Z","level":"info","event":"::endgroup::","try_number":1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31a-7c10-b1a0-c6e50e4e4c2a","task_id":"ingest","dag_id":"olist_ecommerce_pipeline","map_index":-1,"logger":"task","filename":"task_runner.py","lineno":2232}
+{"timestamp":"2026-09-09T23:11:53.740422Z","level":"info","event":"Using existing Kaggle credentials from environment variables.","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.740743Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.740930Z","level":"info","event":"Downloading olistbr/brazilian-ecommerce to /workspaces/olist-ecommerce-pipeline/data/raw","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.741127Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.741320Z","level":"info","event":"Dataset URL: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.741550Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.741749Z","level":"info","event":"DOWNLOAD COMPLETE — files in data/raw:","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.741938Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.742135Z","level":"info","event":"  olist_customers_dataset.csv                  8.62 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.742324Z","level":"info","event":"  olist_geolocation_dataset.csv               58.44 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.742531Z","level":"info","event":"  olist_order_items_dataset.csv               14.72 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.742729Z","level":"info","event":"  olist_order_payments_dataset.csv             5.51 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.742907Z","level":"info","event":"  olist_order_reviews_dataset.csv             13.78 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.743084Z","level":"info","event":"  olist_orders_dataset.csv                    16.84 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.743260Z","level":"info","event":"  olist_products_dataset.csv                   2.27 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.743435Z","level":"info","event":"  olist_sellers_dataset.csv                    0.17 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.743655Z","level":"info","event":"  product_category_name_translation.csv        0.00 MB","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.743829Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.740415Z","level":"info","event":"Done. Returned value was: None","try_number":1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31a-7c10-b1a0-c6e50e4e4c2a","task_id":"ingest","dag_id":"olist_ecommerce_pipeline","map_index":-1,"logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-09-09T23:11:53.740707Z","level":"info","event":"::group::Post Execute","try_number":1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31a-7c10-b1a0-c6e50e4e4c2a","task_id":"ingest","dag_id":"olist_ecommerce_pipeline","map_index":-1,"logger":"task","filename":"task_runner.py","lineno":1580}
+{"timestamp":"2026-09-09T23:11:53.770293Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.770531Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.770747Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): ingest>","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:53.770542Z","level":"info","event":"::endgroup::","try_number":1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31a-7c10-b1a0-c6e50e4e4c2a","task_id":"ingest","dag_id":"olist_ecommerce_pipeline","map_index":-1,"logger":"task","filename":"task_runner.py","lineno":2379}

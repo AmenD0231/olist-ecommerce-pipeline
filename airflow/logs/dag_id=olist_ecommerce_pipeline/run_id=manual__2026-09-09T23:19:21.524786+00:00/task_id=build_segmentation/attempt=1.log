@@ -1,0 +1,42 @@
+{"timestamp":"2026-09-09T23:23:47.582346Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":2412}
+{"timestamp":"2026-09-09T23:23:47.738998Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags, apache-airflow-providers-common-sql-example-dags, apache-airflow-providers-standard-example-dags","map_index":-1,"try_number":1,"ti_id":"01a08878-02d6-76c7-9a27-442da3c5ebed","run_id":"manual__2026-09-09T23:19:21.524786+00:00","dag_id":"olist_ecommerce_pipeline","task_id":"build_segmentation","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":304}
+{"timestamp":"2026-09-09T23:23:47.739887Z","level":"info","event":"Filling up the DagBag from /workspaces/olist-ecommerce-pipeline/airflow/dags/olist_pipeline_dag.py","map_index":-1,"try_number":1,"ti_id":"01a08878-02d6-76c7-9a27-442da3c5ebed","run_id":"manual__2026-09-09T23:19:21.524786+00:00","dag_id":"olist_ecommerce_pipeline","task_id":"build_segmentation","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":460}
+{"timestamp":"2026-09-09T23:23:47.776616Z","level":"info","event":"Worker startup parse complete","bundle_name":"dags-folder","bundle_version":null,"dag_file":"olist_pipeline_dag.py","dag_id":"olist_ecommerce_pipeline","bundle_prepare_ms":1,"dag_file_parse_ms":36,"map_index":-1,"try_number":1,"ti_id":"01a08878-02d6-76c7-9a27-442da3c5ebed","run_id":"manual__2026-09-09T23:19:21.524786+00:00","task_id":"build_segmentation","logger":"task","filename":"task_runner.py","lineno":1073}
+{"timestamp":"2026-09-09T23:23:47.791189Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:47.791522Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:47.791918Z","level":"info","event":"Current task name:build_segmentation","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:47.792214Z","level":"info","event":"Dag name:olist_ecommerce_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:47.791391Z","level":"info","event":"::endgroup::","map_index":-1,"try_number":1,"ti_id":"01a08878-02d6-76c7-9a27-442da3c5ebed","run_id":"manual__2026-09-09T23:19:21.524786+00:00","dag_id":"olist_ecommerce_pipeline","task_id":"build_segmentation","logger":"task","filename":"task_runner.py","lineno":2232}
+{"timestamp":"2026-09-09T23:25:08.911978Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.912407Z","level":"info","event":"CUSTOMER SEGMENTATION (KMEANS)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.912749Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.912986Z","level":"info","event":"Customers with complete features: 92,791 (dropped 605 missing review scores)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.913210Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.913404Z","level":"info","event":"Silhouette score: 0.395","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.913709Z","level":"info","event":"(Scores near 0 are expected here — with ~97% one-time buyers, clusters will overlap heavily rather than separate cleanly. This reflects the real distribution, not a modeling error.)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.913892Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.914077Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.914245Z","level":"info","event":"CLUSTER PROFILES (mean values per cluster)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.914412Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.914652Z","level":"info","event":"         recency_days  purchase_frequency  total_spent  avg_review_score  customer_count  pct_of_total","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.914815Z","level":"info","event":"cluster","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.914969Z","level":"info","event":"0              392.54                1.00       157.08              4.64           32068         34.56","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.915164Z","level":"info","event":"1              121.71                1.00       153.83              4.70           42021         45.29","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.915309Z","level":"info","event":"2              229.96                1.00       182.81              1.72           15940         17.18","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.915514Z","level":"info","event":"3              219.58                2.11       320.37              4.20            2762          2.98","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.915665Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.915832Z","level":"info","event":"Repeat-buyer share per cluster:","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.915977Z","level":"info","event":"  Cluster 0: 0.00% repeat buyers (n=32,068)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.916137Z","level":"info","event":"  Cluster 1: 0.00% repeat buyers (n=42,021)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.916286Z","level":"info","event":"  Cluster 2: 0.00% repeat buyers (n=15,940)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.916431Z","level":"info","event":"  Cluster 3: 99.86% repeat buyers (n=2,762)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.916650Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.916796Z","level":"info","event":"Segmented customers saved to: /workspaces/olist-ecommerce-pipeline/data/features/customer_segments.parquet","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.916951Z","level":"info","event":"Cluster profiles saved to: /workspaces/olist-ecommerce-pipeline/outputs/reports/cluster_profiles.csv","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.917095Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:08.912060Z","level":"info","event":"Done. Returned value was: None","map_index":-1,"try_number":1,"ti_id":"01a08878-02d6-76c7-9a27-442da3c5ebed","run_id":"manual__2026-09-09T23:19:21.524786+00:00","dag_id":"olist_ecommerce_pipeline","task_id":"build_segmentation","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-09-09T23:25:08.912236Z","level":"info","event":"::group::Post Execute","map_index":-1,"try_number":1,"ti_id":"01a08878-02d6-76c7-9a27-442da3c5ebed","run_id":"manual__2026-09-09T23:19:21.524786+00:00","dag_id":"olist_ecommerce_pipeline","task_id":"build_segmentation","logger":"task","filename":"task_runner.py","lineno":1580}
+{"timestamp":"2026-09-09T23:25:09.027134Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:09.027393Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:09.027573Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): build_segmentation>","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:25:09.027075Z","level":"info","event":"::endgroup::","map_index":-1,"try_number":1,"ti_id":"01a08878-02d6-76c7-9a27-442da3c5ebed","run_id":"manual__2026-09-09T23:19:21.524786+00:00","dag_id":"olist_ecommerce_pipeline","task_id":"build_segmentation","logger":"task","filename":"task_runner.py","lineno":2379}

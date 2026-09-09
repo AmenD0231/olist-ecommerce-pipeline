@@ -1,0 +1,66 @@
+{"timestamp":"2026-09-09T23:11:54.667087Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":2412}
+{"timestamp":"2026-09-09T23:11:54.824399Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags, apache-airflow-providers-common-sql-example-dags, apache-airflow-providers-standard-example-dags","dag_id":"olist_ecommerce_pipeline","try_number":1,"map_index":-1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31b-70d0-bd31-fda1f82392d1","task_id":"build_staging","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":304}
+{"timestamp":"2026-09-09T23:11:54.825241Z","level":"info","event":"Filling up the DagBag from /workspaces/olist-ecommerce-pipeline/airflow/dags/olist_pipeline_dag.py","dag_id":"olist_ecommerce_pipeline","try_number":1,"map_index":-1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31b-70d0-bd31-fda1f82392d1","task_id":"build_staging","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":460}
+{"timestamp":"2026-09-09T23:11:54.856052Z","level":"info","event":"Worker startup parse complete","bundle_name":"dags-folder","bundle_version":null,"dag_file":"olist_pipeline_dag.py","dag_id":"olist_ecommerce_pipeline","bundle_prepare_ms":1,"dag_file_parse_ms":30,"try_number":1,"map_index":-1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31b-70d0-bd31-fda1f82392d1","task_id":"build_staging","logger":"task","filename":"task_runner.py","lineno":1073}
+{"timestamp":"2026-09-09T23:11:54.873276Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:54.873683Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:54.874033Z","level":"info","event":"Current task name:build_staging","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:54.874325Z","level":"info","event":"Dag name:olist_ecommerce_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:11:54.873522Z","level":"info","event":"::endgroup::","dag_id":"olist_ecommerce_pipeline","try_number":1,"map_index":-1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31b-70d0-bd31-fda1f82392d1","task_id":"build_staging","logger":"task","filename":"task_runner.py","lineno":2232}
+{"timestamp":"2026-09-09T23:12:30.733547Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.743742Z","level":"info","event":"LOADING RAW TABLES","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.743979Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.744168Z","level":"info","event":"olist_customers_dataset.csv                        99,441 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.744358Z","level":"info","event":"olist_geolocation_dataset.csv                   1,000,163 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.744626Z","level":"info","event":"olist_order_items_dataset.csv                     112,650 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.744851Z","level":"info","event":"olist_order_payments_dataset.csv                  103,886 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.745165Z","level":"info","event":"olist_order_reviews_dataset.csv                    99,224 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.746605Z","level":"info","event":"olist_orders_dataset.csv                           99,441 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.746881Z","level":"info","event":"olist_products_dataset.csv                         32,951 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.747619Z","level":"info","event":"olist_sellers_dataset.csv                           3,095 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.749583Z","level":"info","event":"product_category_name_translation.csv                  71 rows","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.749805Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.750023Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.750685Z","level":"info","event":"APPLYING STAGING TRANSFORMATIONS","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.752155Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.752484Z","level":"info","event":"  olist_order_items_dataset.csv / shipping_limit_date: OK (newly invalid: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.753609Z","level":"info","event":"  olist_order_reviews_dataset.csv / review_creation_date: OK (newly invalid: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.753913Z","level":"info","event":"  olist_order_reviews_dataset.csv / review_answer_timestamp: OK (newly invalid: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.755644Z","level":"info","event":"  olist_orders_dataset.csv / order_purchase_timestamp: OK (newly invalid: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.755860Z","level":"info","event":"  olist_orders_dataset.csv / order_approved_at: OK (newly invalid: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.756628Z","level":"info","event":"  olist_orders_dataset.csv / order_delivered_carrier_date: OK (newly invalid: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.757584Z","level":"info","event":"  olist_orders_dataset.csv / order_delivered_customer_date: OK (newly invalid: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.757855Z","level":"info","event":"  olist_orders_dataset.csv / order_estimated_delivery_date: OK (newly invalid: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.758092Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.758521Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.759588Z","level":"info","event":"STAGING LAYER BUILD COMPLETE","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.759898Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.760177Z","level":"info","event":"olist_customers_dataset.csv                        99,441 rows  (removed: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.761142Z","level":"info","event":"olist_geolocation_dataset.csv                     738,332 rows  (removed: 261831)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.761803Z","level":"info","event":"olist_order_items_dataset.csv                     112,650 rows  (removed: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.762069Z","level":"info","event":"olist_order_payments_dataset.csv                  103,886 rows  (removed: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.762641Z","level":"info","event":"olist_order_reviews_dataset.csv                    99,224 rows  (removed: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.762902Z","level":"info","event":"olist_orders_dataset.csv                           99,441 rows  (removed: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.764597Z","level":"info","event":"olist_products_dataset.csv                         32,951 rows  (removed: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.764812Z","level":"info","event":"olist_sellers_dataset.csv                           3,095 rows  (removed: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.765144Z","level":"info","event":"product_category_name_translation.csv                  71 rows  (removed: 0)","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.765414Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.765701Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.765959Z","level":"info","event":"RAW DATA INTEGRITY CHECK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.766205Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.767589Z","level":"info","event":"olist_customers_dataset.csv                  OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.767820Z","level":"info","event":"olist_geolocation_dataset.csv                OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.768041Z","level":"info","event":"olist_order_items_dataset.csv                OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.768578Z","level":"info","event":"olist_order_payments_dataset.csv             OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.768838Z","level":"info","event":"olist_order_reviews_dataset.csv              OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.769083Z","level":"info","event":"olist_orders_dataset.csv                     OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.771594Z","level":"info","event":"olist_products_dataset.csv                   OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.772049Z","level":"info","event":"olist_sellers_dataset.csv                    OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.774667Z","level":"info","event":"product_category_name_translation.csv        OK","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.774961Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.732919Z","level":"info","event":"Done. Returned value was: None","dag_id":"olist_ecommerce_pipeline","try_number":1,"map_index":-1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31b-70d0-bd31-fda1f82392d1","task_id":"build_staging","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-09-09T23:12:30.733114Z","level":"info","event":"::group::Post Execute","dag_id":"olist_ecommerce_pipeline","try_number":1,"map_index":-1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31b-70d0-bd31-fda1f82392d1","task_id":"build_staging","logger":"task","filename":"task_runner.py","lineno":1580}
+{"timestamp":"2026-09-09T23:12:30.831692Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.832683Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.833022Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): build_staging>","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:12:30.830263Z","level":"info","event":"::endgroup::","dag_id":"olist_ecommerce_pipeline","try_number":1,"map_index":-1,"run_id":"manual__2026-09-09T22:38:36.282237+00:00","ti_id":"01a08852-b31b-70d0-bd31-fda1f82392d1","task_id":"build_staging","logger":"task","filename":"task_runner.py","lineno":2379}

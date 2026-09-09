@@ -1,0 +1,67 @@
+{"timestamp":"2026-09-09T23:23:28.595955Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":2412}
+{"timestamp":"2026-09-09T23:23:29.014375Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags, apache-airflow-providers-common-sql-example-dags, apache-airflow-providers-standard-example-dags","run_id":"manual__2026-09-09T23:19:21.524786+00:00","try_number":1,"task_id":"validate_data","ti_id":"01a08878-02d4-7d08-9005-63e23be9f03d","map_index":-1,"dag_id":"olist_ecommerce_pipeline","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":304}
+{"timestamp":"2026-09-09T23:23:29.015161Z","level":"info","event":"Filling up the DagBag from /workspaces/olist-ecommerce-pipeline/airflow/dags/olist_pipeline_dag.py","run_id":"manual__2026-09-09T23:19:21.524786+00:00","try_number":1,"task_id":"validate_data","ti_id":"01a08878-02d4-7d08-9005-63e23be9f03d","map_index":-1,"dag_id":"olist_ecommerce_pipeline","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":460}
+{"timestamp":"2026-09-09T23:23:29.069634Z","level":"info","event":"Worker startup parse complete","bundle_name":"dags-folder","bundle_version":null,"dag_file":"olist_pipeline_dag.py","dag_id":"olist_ecommerce_pipeline","bundle_prepare_ms":3,"dag_file_parse_ms":54,"run_id":"manual__2026-09-09T23:19:21.524786+00:00","try_number":1,"task_id":"validate_data","ti_id":"01a08878-02d4-7d08-9005-63e23be9f03d","map_index":-1,"logger":"task","filename":"task_runner.py","lineno":1073}
+{"timestamp":"2026-09-09T23:23:29.085293Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:29.085720Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:29.086074Z","level":"info","event":"Current task name:validate_data","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:29.086377Z","level":"info","event":"Dag name:olist_ecommerce_pipeline","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:29.085550Z","level":"info","event":"::endgroup::","run_id":"manual__2026-09-09T23:19:21.524786+00:00","try_number":1,"task_id":"validate_data","ti_id":"01a08878-02d4-7d08-9005-63e23be9f03d","map_index":-1,"dag_id":"olist_ecommerce_pipeline","logger":"task","filename":"task_runner.py","lineno":2232}
+{"timestamp":"2026-09-09T23:23:41.761598Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.761963Z","level":"info","event":"VALIDATING: customers","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.762195Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.762429Z","level":"info","event":"  Rows checked: 99,441","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.762697Z","level":"info","event":"  Expectations: 3/3 passed","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.762881Z","level":"info","event":"  Overall: PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.763052Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.763217Z","level":"info","event":"VALIDATING: orders","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.763374Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.763643Z","level":"info","event":"  Rows checked: 99,441","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.763838Z","level":"info","event":"  Expectations: 3/3 passed","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.764025Z","level":"info","event":"  Overall: PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.764217Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.764430Z","level":"info","event":"VALIDATING: order_items","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.764699Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.764843Z","level":"info","event":"  Rows checked: 112,650","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.764987Z","level":"info","event":"  Expectations: 3/3 passed","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.765148Z","level":"info","event":"  Overall: PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.765289Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.765429Z","level":"info","event":"VALIDATING: payments","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.765611Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.765754Z","level":"info","event":"  Rows checked: 103,886","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.765898Z","level":"info","event":"  Expectations: 2/3 passed","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.766038Z","level":"info","event":"  Overall: FAILED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.766186Z","level":"info","event":"    FAILED: expect_column_values_to_be_between on column 'payment_installments'","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.766336Z","level":"info","event":"    2 offending row(s) saved to: /workspaces/olist-ecommerce-pipeline/outputs/reports/payments_data_quality_findings.csv","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.766570Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.766731Z","level":"info","event":"VALIDATING: reviews","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.766872Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.767012Z","level":"info","event":"  Rows checked: 99,224","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.767152Z","level":"info","event":"  Expectations: 2/2 passed","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.767292Z","level":"info","event":"  Overall: PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.767462Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.767631Z","level":"info","event":"VALIDATING: products","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.767773Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.767913Z","level":"info","event":"  Rows checked: 32,951","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.768056Z","level":"info","event":"  Expectations: 1/1 passed","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.768201Z","level":"info","event":"  Overall: PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.768341Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.768550Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.768714Z","level":"info","event":"VALIDATION SUMMARY","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.768863Z","level":"info","event":"================================================================================","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.769027Z","level":"info","event":"      table  rows_checked  expectations_passed  expectations_total status","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.769176Z","level":"info","event":"  customers         99441                    3                   3 PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.769327Z","level":"info","event":"     orders         99441                    3                   3 PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.769505Z","level":"info","event":"order_items        112650                    3                   3 PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.769663Z","level":"info","event":"   payments        103886                    2                   3 FAILED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.769814Z","level":"info","event":"    reviews         99224                    2                   2 PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.769962Z","level":"info","event":"   products         32951                    1                   1 PASSED","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.770113Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.770262Z","level":"info","event":"Summary saved to: /workspaces/olist-ecommerce-pipeline/outputs/reports/validation_summary.csv","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.770410Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.761666Z","level":"info","event":"Done. Returned value was: None","run_id":"manual__2026-09-09T23:19:21.524786+00:00","try_number":1,"task_id":"validate_data","ti_id":"01a08878-02d4-7d08-9005-63e23be9f03d","map_index":-1,"dag_id":"olist_ecommerce_pipeline","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-09-09T23:23:41.761896Z","level":"info","event":"::group::Post Execute","run_id":"manual__2026-09-09T23:19:21.524786+00:00","try_number":1,"task_id":"validate_data","ti_id":"01a08878-02d4-7d08-9005-63e23be9f03d","map_index":-1,"dag_id":"olist_ecommerce_pipeline","logger":"task","filename":"task_runner.py","lineno":1580}
+{"timestamp":"2026-09-09T23:23:41.786040Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.786263Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.786557Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): validate_data>","logger":"task.stdout"}
+{"timestamp":"2026-09-09T23:23:41.786572Z","level":"info","event":"::endgroup::","run_id":"manual__2026-09-09T23:19:21.524786+00:00","try_number":1,"task_id":"validate_data","ti_id":"01a08878-02d4-7d08-9005-63e23be9f03d","map_index":-1,"dag_id":"olist_ecommerce_pipeline","logger":"task","filename":"task_runner.py","lineno":2379}
